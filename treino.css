@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root {
+    --cor-primaria: #35B4F0;
+    --cor-secundaria: #353EF0;
+    --cor-terciaria: #367AF0;
+    --cor-extra: #536075;
+    --fonte-principal: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    background: white url(Imagens/planeta.jpg) no-repeat ; 
+    background-position: center top;   
+    background-size: cover;
+    width: 100%;
+    height: 32vh;
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: #ffffff;
+    box-shadow: inset 0 0 10px 1px black;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: clamp(20px, 6vw, 50px);
+}
+
+body {
+    background-color: var(--cor-extra);
+}
+
+header > p {
+    font-size: clamp(16px, 2vw, 24px);
+    
+}

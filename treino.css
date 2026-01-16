@@ -112,3 +112,7 @@ main.midia > p > iframe {
 main.midia > p {
     text-align: center;
 } 
+
+h1.frame {
+    text-align: center;
+}

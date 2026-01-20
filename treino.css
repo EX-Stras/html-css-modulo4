@@ -96,6 +96,14 @@ main.primeiro > p {
     padding-bottom: 1em;
 }
 
+main.primeiro > p > a {
+    color: var(--cor-primaria);
+}
+
+main.primeiro > p > a:active {
+    color: var(--cor-secundaria);
+}
+
 main.midia {
     background-color: var(--cor-extra);
     width: 100%;

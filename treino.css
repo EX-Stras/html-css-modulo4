@@ -87,7 +87,7 @@ main.primeiro > h2 {
     background-image: linear-gradient(to right, rgba(0, 0, 255, 0.311), rgba(0, 0, 255, 0.311), transparent);
 }
 
-main.primeiro > p {
+main.primeiro p{
     text-align: justify;
     font-size: 18px;
     text-indent: 1em;
@@ -124,3 +124,8 @@ main.midia > p {
 h1.frame {
     text-align: center;
 }
+
+ main.primeiro input {
+  
+   
+ }

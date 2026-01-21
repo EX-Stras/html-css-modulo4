@@ -69,7 +69,7 @@
 
        <p>Vamos usar as tags &lt;form&gt; e &lt;input&gt;, com essa hierarquia mesmo:</p>
 
-       <form action="eu.c">
+       <form action="" method="post">
         
         <p>Nome: <input type="text" name="nome" id="nome"></p>
 
@@ -79,7 +79,7 @@
 
        <p>Para fazer um botão de envio usamos o input submit, observe:</p>
 
-       <form action="">
+       <form action="eu.c" method="get"> 
         
         <p>Nome: <input type="text" name="nome" id="nome"></p>
 
@@ -87,7 +87,7 @@
 
        </form>
 
-       <h2>&lt;Label&gt;</h2>
+       <h2>&lt;Label&gt;:</h2>
 
        <p>O label serve pra "conectar" o parágrafo (nome ou sobrenome no caso) com o input deles. </p>
 
@@ -98,6 +98,124 @@
        <p>Ex:</p>
 
        <p><label for="num">Idade:</label> <input type="number" name="" id="num"></p>
+
+       <h2>Get e Post:</h2>
+
+       <p>Esses nomes são formas de enviar dados, quando um dado não é sensível usamos get, quando é, usamos post.</p>
+
+       <p>Quando usamos get os dados que enviamos no formulário aparecem na url da pesquisa, já no post, um jeito de ver os dados é abrindo o devtools e procurando a aba network. </p>
+
+       <p>Depois disso basta procurar o nome do arquivo os quais dados foram enviados.</p>
+
+    </main>
+
+    <main class="midia">
+
+        <p><img src="Imagens/get&post.jpg" alt=""></p>
+
+    </main>
+
+    <main class="primeiro">
+
+       <h2>Exemplo de Usuário e Senha:</h2>
+
+       <form action="eu.c" method="get" autocomplete="on">
+           <p>
+              <label for="iusu">Usuário:*</label>
+              <input type="text" name="" id="iusu" required minlength="5" maxlength="20" size="20" placeholder="Não use seu nome real" autocomplete="username">
+           </p>
+           <p>
+              <label for="iseh">Senha:*</label>
+              <input type="password" name="" id="iseh" required minlength="8" maxlength="25" placeholder="Min 8 Max 25" size="23" autocomplete="new-password">
+           </p>
+           <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+       </form>
+
+       <p>O input de email por enquato é totalmente semântico, não causa nenhuma mudança visual.</p>
+
+       <p>Já o input password transforma toda a escrita do usuário em bolinhas.</p>
+
+       <p>Eu usei uma leva de configuraçôes extras nesse formulário, vou explica-las abaixo:</p>
+
+       <p>required: faz com que o campo seja obrigatório, ou seja, o usuário não pode deixar o campo em branco.</p>
+
+       <p>maxlength: define o número máximo de caracteres que podem ser digitados no campo.</p>
+
+       <p>minlength: define o número mínimo de caracteres que podem ser digitados no campo.</p>
+
+       <p>size: define o tamanho do campo em caracteres.</p>
+
+       <p>placeholder: define um texto que aparece dentro do campo antes do usuário digitar.</p>
+
+       <p>autocomplete: define se o navegador deve completar automaticamente o campo.</p>
+
+       <h2>Mais Algumas Configurações:</h2>
+
+       <form action="" method="get" autocomplete="off">
+
+            <p>
+                <label for="inota">Média</label>
+                <input type="number" name="" id="inota" placeholder="de 0 a 10" step="0.0001" min="0" max="10">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+
+       </form>
+
+       <p>A configuração step define de quanto em quanto o valor pode ser incrementado ou decrementado.</p>
+
+       <p>Ela só funciona com inputs do tipo number.</p>
+
+       <form action="" method="get" autocomplete="on">
+
+        <p>
+            <label for="imes">Data</label>
+            <input type="month" name="" id="imes" value="2026-01">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        
+       </form>
+
+         <p>O input month cria um campo que só aceita meses e anos.</p>
+
+         <p>A configuração value define o valor padrão do campo.</p>
+
+         <form action="" method="get">
+
+
+            <p>
+                <label for="idia">Data</label>
+                <input type="date" name="" id="idia" value="2024-12-25">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+
+
+         </form>
+
+            <p>O input date cria um campo que só aceita datas completas (dia, mês e ano).</p>
+
+            <form action="" method="get">
+
+
+                <p>
+                    <label for="ihora">Hora</label>
+                    <input type="time" name="" id="ihora" value="14:30">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+
+
+            </form>
+
+            <p>O input time cria um campo que só aceita horas e minutos.</p>
+
+
 
     </main>
     

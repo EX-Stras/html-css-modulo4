@@ -121,11 +121,12 @@ main.midia > p {
     text-align: center;
 } 
 
+main.midia img {
+    width: 80%;
+}
+
 h1.frame {
     text-align: center;
 }
 
- main.primeiro input {
-  
-   
- }
+ 

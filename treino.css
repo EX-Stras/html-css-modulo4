@@ -129,4 +129,18 @@ h1.frame {
     text-align: center;
 }
 
+form {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+fieldset.test{
+    columns: 2;
+}
  

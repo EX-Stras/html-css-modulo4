@@ -376,6 +376,50 @@
 
         <p>O input:file cria um campo que permite ao usuário selecionar um arquivo do seu dispositivo para enviar através do formulário.</p>
 
+        <h2>Select, Datalist e Textarea</h2>
+
+        <form action="" method="get" autocomplete="on">
+            <fieldset>
+                <p>
+                    <label for="iest">Linguagem preferida:</label><br>
+                    <select name="" id="iest">
+                        <optgroup label="front-end">
+                            <option value="linguagem">JavaScript</option>
+                            <option value="linguagem">HTML5 e CSS3</option>
+                        </optgroup>
+                        <optgroup label="back-end">
+                            <option value="linguagem">Lua</option>
+                            <option value="linguagem">Python</option>
+                            <option value="linguagem" selected>C++</option>
+                            <option value="linguagem">C</option>
+                            <option value="linguagem">C#</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iProf">Profissão:</label><br>
+                    <input type="text" name="" id="iProf" list="prof">
+                    <datalist id="prof">
+                        <option value="ADM">Adiministrador</option>
+                        <option value="PROF">Professor</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="iarea">Mensagem:</label><br>
+                    <textarea name="" id="iarea" rows="10" cols="30"></textarea>
+                </p>
+                
+            </fieldset>
+
+        </form>
+
+        <p>O select é um elemento que permite ao usuário escolher uma opção entre várias disponíveis, ele é usado junto ao option, que serve para definir cada opção individualmente. Para organizar melhor as opções, pode-se usar o optgroup.</p>
+
+        <p>Já o datalist é um elemento que permite ao usuário digitar um valor e exibe sugestões com base em uma lista de opções pré-definidas.</p>
+
+        <p>O textarea é um elemento que permite ao usuário digitar um texto de múltiplas linhas.</p>
+
     </main>
 
 </body>

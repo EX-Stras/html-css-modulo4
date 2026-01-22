@@ -341,7 +341,41 @@
         <p>Já o input:radio cria botões de opção que permitem ao usuário selecionar apenas uma opção.</p>
 
         <p>Para que o input:radio funcione corretamente, todos os elementos radio com o mesmo nome devem estar dentro do mesmo grupo.</p>
-        
+
+        <h2>Color, Range e File:</h2>
+
+        <form action="" method="get" autocomplete="on">
+
+            <p>
+                <label for="icolor">Escolha uma cor:</label>
+                <input type="color" name="" id="icolor" value="#ff0000">
+            </p>
+
+            <p>
+                <label for="irange">Escolha um valor (0 a 100):</label>
+                <input type="range" name="" id="irange" min="0" max="6" value="1">
+            </p>
+
+            <p>
+                <label for="ifile">Envie um arquivo:</label>
+                <input type="file" name="" id="ifile" accept=".jpg, .png, .pdf">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+
+        <p>Tá meio bugado mas eu vou explicar aqui:</p>
+
+        <p>O input:color cria um bloco com uma cor pra pessoa escolher uma cor dentre 65 milhões, não vejo muita utilidade pra ele.</p>
+
+        <p>O input:range cria uma barra deslizante que permite ao usuário selecionar um valor dentro de um intervalo definido pelos atributos min e max.</p>
+
+        <p>O input:file cria um campo que permite ao usuário selecionar um arquivo do seu dispositivo para enviar através do formulário.</p>
+
     </main>
 
 </body>

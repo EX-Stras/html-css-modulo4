@@ -1,11 +1,19 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body, html{
+body{
     text-align: center;
     height: 100vh;
-    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    width: 100vw;
+    background-color: rgb(35, 62, 255);
+    color: white;
+    font-weight: bold;
 }
 
 img {

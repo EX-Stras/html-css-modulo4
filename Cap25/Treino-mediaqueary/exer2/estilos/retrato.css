@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../../imagens/back-pc.jpg);
+    background-size: cover;
+}
+
+img {
+    display: none;
+}

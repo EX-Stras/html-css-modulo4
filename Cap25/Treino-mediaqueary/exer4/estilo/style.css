@@ -1,1 +1,102 @@
 @charset "UTF-8";
+
+/*media all:*/
+@media all {
+:root {
+    --font-principal:  Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-principal);
+    width: 97vw;
+    height: 97vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+section {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.588);
+    border-radius: 5px;
+    position: relative;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display: none;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+h1 {
+    margin: 20px;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+}
+@media screen and (max-width: 600px ) {
+    img.Celular {
+        display: inline;
+    }
+    body {
+        background-image: url(../../imagens/back-phone.jpg);
+    }
+}
+
+@media screen and (max-width: 900px ) and (min-width: 601px) {
+    img.Tablet {
+        display: inline;
+    }
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+}
+
+
+
+@media screen and (max-width: 1919px) and (min-width: 901px) {
+    img.Computador {
+        display: inline;
+    }
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+}
+
+
+
+@media screen and (min-width: 1920px) {
+    img.TV {
+        display: inline;
+    }
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+}
+
+
+@media print {
+    img.Impressora {
+        display: inline;
+    }
+    body {
+        background-image: url(../../imagens/back-print.jpg);
+    }
+}
+

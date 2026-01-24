@@ -125,6 +125,11 @@ main.midia img {
     width: 80%;
 }
 
+main.foot {
+    margin-bottom: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
 h1.frame {
     text-align: center;
 }
@@ -142,5 +147,25 @@ input {
 
 fieldset.test{
     columns: 2;
+}
+
+body footer {
+    background-color: var(--cor-extra);
+    font-family: var(--fonte-principal);
+    padding: 12px;
+}
+
+footer > p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+footer > p > a {
+    color: white;
+}
+
+footer > p > a:hover {
+    color: var(--cor-secundaria);
 }
  

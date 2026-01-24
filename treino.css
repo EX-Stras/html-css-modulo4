@@ -153,6 +153,7 @@ body footer {
     background-color: var(--cor-extra);
     font-family: var(--fonte-principal);
     padding: 12px;
+    box-shadow: inset 0 0 10px 1px black;
 }
 
 footer > p {

@@ -15,6 +15,7 @@ header {
     background-color: gray;
     color: rgb(0, 0, 0);
     height: 150px;
+    border: 2px solid black;
 }
 
 header > h1 {
@@ -73,7 +74,7 @@ section {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     i.material-symbols-outlined {
         display: block;

@@ -37,7 +37,10 @@ header a {
     padding: 10px 10px;
     text-decoration: none;
     margin: 0;
-    border: white 1px solid;
+}
+
+header a:hover {
+    background-color: rgba(0, 0, 0, 0.746);
 }
 
 main {
